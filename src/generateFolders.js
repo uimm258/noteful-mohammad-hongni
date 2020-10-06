@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function GenerateFolders(props) {
   function handleClick(e) {
@@ -21,7 +20,6 @@ export default function GenerateFolders(props) {
       return (
         <li key={index} data-id={folder.id}>
           <button onClick={handleClick}>{folder.name}</button>
-          <Link to={`/folder/${folder.id}`}></Link>
         </li>
       )
     })

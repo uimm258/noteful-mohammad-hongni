@@ -1,8 +1,5 @@
 import React from 'react';
-import Folder from '../Folder';
-import Note from '../Note';
 import Header from '../Header/Header';
-import { Link } from 'react-router-dom';
 import GenerateFolders from '../GenerateFolders'
 import GenerateNotes from '../GenerateNotes'
 import './HomePage.css'

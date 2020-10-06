@@ -5,7 +5,9 @@ import './Header.css'
 export default function Header() {
     return (
         <header className="header">
-            <Link to='/'>Noteful</Link>
+            <Link to='/'><h1>
+                Noteful
+            </h1></Link>
         </header>
     )
 }

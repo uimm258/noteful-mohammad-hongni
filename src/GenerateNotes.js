@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function GenerateNotes(props){
   function handleClick(e){
@@ -12,7 +11,9 @@ export default function GenerateNotes(props){
   list=list.map((note,index)=>{
     return (
       <li key={index} data-id={note.id}>
-        <button onClick={handleClick}>{note.name}</button>
+        <button onClick={handleClick}><h3>
+          {note.name}
+        </h3></button>
         <h5>Date Modified: {note.modified}</h5>
       </li>
     )

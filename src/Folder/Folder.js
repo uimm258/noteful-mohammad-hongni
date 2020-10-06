@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header/Header';
-import GenerateFolders from './GenerateFolders'
-import GenerateNotes from './GenerateNotes'
+import Header from '../Header/Header';
+import GenerateFolders from '../GenerateFolders'
+import GenerateNotes from '../GenerateNotes'
 
 export default function Folder(props){
   const folderId = props.match.params.folder;

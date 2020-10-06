@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
-import Folder from './Folder';
+import Folder from './Folder/Folder';
 import Note from './Note';
 import HomePage from './Homepage/HomePage';
 import store from './STORE';
