@@ -12,7 +12,6 @@ export default function GenerateFolders(props) {
       return (
         <li key={index} data-id={folder.id} className={folder.id===props.filter?'selected':''}>
           <button onClick={handleClick}>{folder.name}</button>
-          <Link to={`/folder/${folder.id}`}></Link>
         </li>
       )
     })

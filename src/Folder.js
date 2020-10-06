@@ -15,7 +15,7 @@ export default function Folder(props){
             </div>
 
             <div className="note">
-                <GenerateNotes store={props.store} filter={folderId}/>
+                <GenerateNotes store={props.store} history={props.history} filter={folderId}/>
             </div>
         </main>
     </div>

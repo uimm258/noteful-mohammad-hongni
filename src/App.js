@@ -19,7 +19,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" render={(props) => <HomePage {...props} store={store} />} />
           <Route exact path="/folder/:folder" render={(props) => <Folder {...props} store={store} />} />
-          <Route exact path="/note/:note" component={Note} />
+          <Route exact path="/note/:note" render={(props) => <Note {...props} store={store} />} />
         </Switch>
       </div>
     )

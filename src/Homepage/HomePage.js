@@ -18,7 +18,7 @@ export default function HomePage(props){
                 </div>
 
                 <div className="note">
-                    <GenerateNotes store={props.store}/>
+                    <GenerateNotes store={props.store} history={props.history}/>
                 </div>
             </main>
         </div>
