@@ -3,18 +3,15 @@ import Folder from './Folder';
 import Note from './Note';
 import Header from './Header';
 import { Link } from 'react-router-dom';
+import generateFolders from './generateFolders'
 
-export default function HomePage(){
+export default function HomePage(props){
     return(
         <div>
             <Header />
             <main>
                 <div className="folder">
-                    <ul>
-                        <li>
-                            <Link to={ `/folder/:folder`}>Folder</Link>
-                        </li>
-                    </ul>
+                    <generateFolders store={props.store}/>
                 </div>
 
                 <div className="note">
