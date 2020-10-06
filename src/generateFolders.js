@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function generateFolders(props){
+export default function GenerateFolders(props){
   const folders = props.store.folders;
-  const list=folders.map(folder=>{
+  const list=folders.map((folder,index)=>{
     return (
-      <li>
-        <Link to={`/folder/${folder.id}`}>folder.name</Link>
+      <li key={index}>
+        <Link to={`/folder/${folder.id}`}>{folder.name}</Link>
       </li>
     )
   })
