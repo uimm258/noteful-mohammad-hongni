@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 
 export default function GenerateNotes(props){
   const notes = props.store.notes;
-  const list=notes.map((note,index)=>{
+  let list=props.store.notes;
+  if(props.filter){
+    list=list.filter(note=>note.folderId===props.filter)
+  }
+  list=list.map((note,index)=>{
     return (
       <li key={index}>
         <Link to={`/note/${note.id}`}>{note.name}</Link>

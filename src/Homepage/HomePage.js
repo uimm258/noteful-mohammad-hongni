@@ -13,7 +13,7 @@ export default function HomePage(props){
             <Header />
             <main>
                 <div className="folder">
-                    <GenerateFolders store={props.store}/>
+                    <GenerateFolders store={props.store} history={props.history}/>
                     <button>Add Folder</button>
                 </div>
 
