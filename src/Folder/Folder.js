@@ -10,12 +10,12 @@ export default function Folder(props){
         <Header />
         <main>
             <div className="folder">
-                <GenerateFolders store={props.store} history={props.history} filter={folderId}/>
+                <GenerateFolders history={props.history} filter={folderId}/>
                 <button>Add Folder</button>
             </div>
 
             <div className="note">
-                <GenerateNotes store={props.store} history={props.history} filter={folderId}/>
+                <GenerateNotes history={props.history} filter={folderId}/>
             </div>
         </main>
     </div>
